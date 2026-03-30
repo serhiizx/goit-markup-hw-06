@@ -51,6 +51,65 @@
             </li>
           </ul>
         </address>
+        <div class="burger-menu" onclick="document.querySelector('.mobile-nav-root').classList.toggle('show')">
+          <svg width="17" height="15">
+            <use href="./images/icons.svg#burger" />
+          </svg>
+
+        <div class="mobile-nav-root">
+          <button class="modal-close-btn" type="button">
+            <svg class="modal-close-btn-icon" width="8" height="8">
+              <use href="./images/icons.svg#close"></use>
+            </svg>
+          </button>
+
+          <ul class="navigation-list">
+            <li>
+              <a href="#" class="active">Studio</a>
+            </li>
+            <li>
+              <a href="#">Portfolio</a>
+            </li>
+            <li>
+              <a href="#">Contacts</a>
+            </li>
+          </ul>
+          <ul class="contacts-list">
+            <li><a href="tel:+11(000)111-11-11" class="active">+11 (000) 111-11-11</a></li>
+            <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+          </ul>
+          <ul class="social-list">
+            <li>
+              <a href="index.html" class="button-icon-link">
+                <svg width="24" height="24" class="footer-socials-link-svg">
+                  <use href="./images/icons.svg#instagram" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="index.html" class="button-icon-link">
+                <svg width="24" height="24">
+                  <use href="./images/icons.svg#twitter" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="index.html" class="button-icon-link">
+                <svg width="24" height="24">
+                  <use href="./images/icons.svg#facebook" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="index.html" class="button-icon-link">
+                <svg width="24" height="24">
+                  <use href="./images/icons.svg#linkedin" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
       </div>
     </header>
 
@@ -58,7 +117,7 @@
       <!-- Hero -->
       <section class="section hero">
         <div class="container hero-container">
-          <h1 class="hero-title">Effective Solutions for Your Business</h1>
+          <h1 class="hero-title">Effective Solutions <br> for Your Business</h1>
           <button type="button" class="button--accent">Order Service</button>
         </div>
       </section>
@@ -121,7 +180,7 @@
       </section>
 
       <!-- Our Team -->
-      <section class="section team">
+      <section class="hide section team">
         <div class="container">
           <h2 class="section-title">Our Team</h2>
           <ul class="team-list">
@@ -374,7 +433,7 @@
       </section>
 
       <!-- Portfolio -->
-      <section class="portfolio">
+      <section class="hide portfolio">
         <div class="container">
           <h2 class="section-title">Our Portfolio</h2>
           <ul class="portfolio-list">
@@ -503,8 +562,8 @@
       </section>
     </main>
 
-    <footer class="footer">
-      <div class="container">
+    <footer class="hide footer">
+      <div class="container flex-wrap">
         <div class="footer-left">
           <a class="footer-logo-link logo logo--light" href="./index.html"
             >Web<span class="logo-accent">Studio</span></a

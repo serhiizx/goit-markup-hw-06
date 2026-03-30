@@ -375,7 +375,6 @@ address {
     display: flex;
   }
 
-
   .navigation-list {
     flex: 1;
     display: flex;
@@ -471,7 +470,6 @@ address {
     gap: 12px;
   }
   .contact-list-item {
-
   }
   .address-link {
     font-weight: 400;
@@ -593,7 +591,6 @@ address {
     .container {
       padding: 0;
     }
-
 
     .hero-title {
       font-weight: 700;
